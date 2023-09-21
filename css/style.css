@@ -1,0 +1,105 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+font-family: 'Open Sans', sans-serif;
+margin: 30PX;
+padding: 20px 80px;
+border: 2px solid var(--blue-color);
+height: 90vh;
+}
+:root {
+    --brown-color: #D1884F;
+    --blue-alt-color: #008AAA;
+    --blue-color: #3BBADB;
+}
+header nav {
+    margin-bottom: 80px;
+    font-size:x-large ;
+}
+header nav ul{
+    display: flex;
+    justify-content: end;
+}
+header nav ul li{
+    list-style: none;
+    margin-right: 40px;
+    transition: .3s;
+}
+header nav ul li:hover a {
+    color:var(--brown-color);
+}
+header nav ul li:hover  i{
+    color: var(--brown-color);
+}
+header nav ul li i{
+    padding: 10px;
+    transition: color 0.3s;
+}
+header nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+#home {
+    display: flex;
+    justify-content: space-between;
+    font-size: x-large;
+}
+#home .ldiv .art-one p {
+    color: var(--blue-color);
+    margin-bottom: 40px;
+    font-size: larger;
+}
+#home .ldiv .art-one h1{
+    color: var(--blue-alt-color);
+    max-width: 350px;
+    font-size: xx-large;
+    margin-bottom: 40px;
+}
+#home .ldiv .art-one h1 span {
+    color: var(--brown-color);
+}
+#home .ldiv .art-tow p {
+    max-width: 700px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+#home .ldiv .art-tow p span {
+    color: var(--blue-color);
+}
+#home .ldiv .art-three div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#home .ldiv .art-three div button {
+    background-color: white;
+    color: var(--blue-color);
+    border-color: var(--blue-color);
+    padding: 10px 30px;
+    font-size: xx-large;
+    margin: 20px auto 0;
+    border-radius: 7px;
+    transition: .5s;
+}
+#home .ldiv .art-three div button:hover{
+    color: white;
+    background-color: var(--blue-alt-color);
+}
+#home .rdiv  {
+    width: 400px;
+    height: 400px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(59,186,219,1) 33%, rgba(0,212,255,1) 100%);
+    border-start-end-radius: 50%;
+    writing-mode: vertical-lr;
+    
+}
+#home .rdiv img {
+    width: 400px;
+    border-start-end-radius: 50%;
+    writing-mode: vertical-lr;
+    position: absolute;
+    padding-left: 20px;    
+}

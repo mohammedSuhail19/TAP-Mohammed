@@ -73,7 +73,8 @@ header nav ul li a{
 @media (max-width: 767px) {
     #home {
         font-size: medium;
-        flex-direction: column;
+        flex-wrap: wrap-reverse;
+        
     }
     
 }
@@ -111,6 +112,7 @@ header nav ul li a{
     #home .ldiv .art-tow p {
         font-size: 15px;
         width: fit-content;
+        margin-bottom: 20px;
     }
     
 }

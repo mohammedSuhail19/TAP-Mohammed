@@ -1,26 +1,50 @@
 *{
     box-sizing: border-box;
 }
-body{
-    font-family: 'Cairo', sans-serif;
-font-family: 'Open Sans', sans-serif;
-margin: 30PX;
-padding: 20px 80px;
-border: 2px solid var(--blue-color);
-height: 90vh;
-}
 :root {
     --brown-color: #D1884F;
     --blue-alt-color: #008AAA;
     --blue-color: #3BBADB;
 }
+body{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    margin: 30PX;
+    padding: 20px 80px;
+    border: 2px solid var(--blue-color);
+    height: 90vh;
+}
+@media (max-width: 767px) {
+    body {
+        height: fit-content;
+        padding: 10px 40px;
+    }
+}
+
 header nav {
     margin-bottom: 80px;
     font-size:x-large ;
 }
+@media (max-width: 767px) {
+    header nav {
+        margin: 0;
+        font-size: medium;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    header nav ul {
+        justify-content: center;
+    }
+    header nav ul li {
+        margin-right: 0;
+    }
+}
 header nav ul{
     display: flex;
     justify-content: end;
+
 }
 header nav ul li{
     list-style: none;
@@ -46,6 +70,13 @@ header nav ul li a{
     justify-content: space-between;
     font-size: x-large;
 }
+@media (max-width: 767px) {
+    #home {
+        font-size: medium;
+        flex-direction: column;
+    }
+    
+}
 #home .ldiv .art-one p {
     color: var(--blue-color);
     margin-bottom: 40px;
@@ -68,6 +99,21 @@ header nav ul li a{
 #home .ldiv .art-tow p span {
     color: var(--blue-color);
 }
+@media (max-width: 767px) {
+    #home .ldiv .art-one p {
+        font-size: medium;
+        margin-bottom: 10px;
+    }
+    #home .ldiv .art-one h1 {
+        font-size: large;
+        margin-bottom: 20px;
+    }
+    #home .ldiv .art-tow p {
+        font-size: 15px;
+        width: fit-content;
+    }
+    
+}
 #home .ldiv .art-three div {
     display: flex;
     justify-content: center;
@@ -82,6 +128,17 @@ header nav ul li a{
     margin: 20px auto 0;
     border-radius: 7px;
     transition: .5s;
+}
+@media (max-width: 767px)  {
+    #home .ldiv .art-three div {
+        display: flex;
+        justify-content: space-around;
+    }
+    #home .ldiv .art-three div button {
+        font-size: large;
+        margin-right: 10px;
+        margin-left: 10px;
+        }
 }
 #home .ldiv .art-three div button:hover{
     color: white;
@@ -102,4 +159,14 @@ header nav ul li a{
     writing-mode: vertical-lr;
     position: absolute;
     padding-left: 20px;    
+}
+@media (max-width: 767px)  {
+    #home .rdiv  {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+    }
+    #home .rdiv img {
+        width: 250px;
+    }
 }
